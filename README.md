@@ -1,5 +1,7 @@
 # CronDst
 
+[![Test](https://github.com/lawcal/crondst/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/lawcal/crondst/actions/workflows/test.yml)
+
 CronDst returns when the next job triggers given a cron expression. Supports time zones and daylight savings time (DST).
 
 Features:
