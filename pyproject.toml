@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "crondst"
-version = "1.0.2"
+version = "1.0.3"
 description = "Returns when the next job triggers given a cron expression. Supports DST."
 authors = [
     {name = "Calvin Law"}
@@ -28,4 +28,7 @@ keywords = ["cron", "crontab", "schedule"]
 Homepage = "https://github.com/lawcal/crondst"
 
 [tool.setuptools]
-py-modules = ["crondst"]
+packages = ["crondst"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

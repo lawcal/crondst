@@ -12,8 +12,6 @@ Features:
 ## Install
 `pip install crondst`
 
-Or simply copy the `crondst.py` file to your project directory.
-
 ## Usage
 ```
 from datetime import datetime
