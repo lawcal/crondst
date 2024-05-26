@@ -1,4 +1,4 @@
-# CronDst v1.0.2
+# CronDst v1.0.3
 
 # MIT License
 #
@@ -28,6 +28,8 @@ from __future__ import annotations
 from collections.abc import Generator
 import dataclasses as dc
 import datetime as dt
+
+__all__ = ['CronDst', 'CronDstError']
 
 class CronDstError(Exception):
     pass
@@ -328,7 +330,7 @@ def _delta_seconds_between_fold(datetime: dt.datetime) -> int:
 # ********************
 
 class CronDst:
-    def __init__(self, expression):
+    def __init__(self, expression: str):
         self.entry = _CronEntry.from_expression(expression)
 
     def iter(
